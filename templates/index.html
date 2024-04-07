@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amazing app to help you find the nearest MBTA station</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Nearest MBTA Station! </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Find the Nearest MBTA Station</h1>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Enter the name of a place:</h2>
+            <form action="/mbta/" method="post">
+                <label for="place_name">Place Name:</label>
+                <input type="text" id="place_name" name="place_name" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section class="map-section">
+            <h2>MBTA Rapid Transit MAP</h2>
+            <img src="https://cdn-v2.theculturetrip.com/1200x675/wp-content/uploads/2016/09/2013_unofficial_mbta_subway_map_by_michael_kvrivishvili.webp" alt="MBTA Map">
+        </section>
+    </main>
 
-  <body>
-    <p>Hi</p>
-  </body>
+</body>
 </html>

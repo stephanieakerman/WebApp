@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Station Found</title>
+    <style>
+        body {
+            background-color: yellow; 
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .station-info {
+            margin-top: 20px;
+        }
+        .ask-another-button {
+            background-color: yellow; 
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; 
+            display: inline-block; 
+        }
+        .ask-another-button:hover {
+            background-color: yellow;
+        }
+ 
+    </style>
+</head>
+<body>
+    <h1> Your Station has been Found! </h1>
+    <div class="station-info">
+        <p>Nearest MBTA station to {{ place_name }} is {{ nearest_station }}.</p>
+    </div>
+    <a href="/" class="ask-another-button">Look for other Station</a>
+</body>
+</html>
